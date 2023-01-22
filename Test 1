@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cure Beyond Science - CBD Health Benefits</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Cure Beyond Science</h1>
+      <nav>
+        <ul>
+          <li><a href="#about-cbd">About CBD</a></li>
+          <li><a href="#health-benefits">Health Benefits</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about-cbd">
+        <h2>About CBD</h2>
+        <p>CBD, or cannabidiol, is a natural compound</p>
+      </section>
+      <section id="health-benefits">
+        <h2>Health Benefits of CBD</h2>
+        <p>CBD has been shown to have potential therapeutic benefits for a wide range of conditions, including:</p>
+<ul>
+<li>Reducing anxiety and depression</li>
+<li>Relieving pain and inflammation</li>
+<li>Improving sleep quality</li>
+<li>Reducing the symptoms of PTSD</li>
+<li>Improving heart health</li>
+</ul>
+<p>In addition, CBD may also have potential benefits for certain skin conditions and may show promise as an anti-cancer agent.</p>
+<p id="fact"></p>
+<button onclick="displayFact()">Show a random health fact</button>
+</section>
+</main>
+<script>
+function displayFact() {
+var facts = [
+"CBD has been found to have anti-inflammatory properties that can help reduce pain and inflammation in conditions such as arthritis.",
+"CBD may have the potential to help reduce symptoms of anxiety and depression, by influencing the activity of serotonin in the brain.",
+"CBD has been found to have anti-seizure properties, which may make it a useful treatment option for people with epilepsy.",
+"CBD may help to improve heart health by reducing blood pressure and improving circulation.",
+"CBD may have the potential to help reduce symptoms of PTSD, by regulating the activity of the endocannabinoid system."
+];
+var fact = facts[Math.floor(Math.random() * facts.length)];
+document.getElementById("fact").innerHTML = fact;
+}
+</script>
+
+  </body>
+</html>
+```
